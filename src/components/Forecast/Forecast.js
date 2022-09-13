@@ -32,7 +32,30 @@ const Forecast = ({ data }) => {
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
-            <AccordionItemPanel></AccordionItemPanel>
+            <AccordionItemPanel>
+              <div className="dailyDetailsGrid">
+                <div className="dailyDetailsGridItem">
+                  <label>Description</label>
+                  <label>{item.weather[0].description}</label>
+                </div>
+                <div className="dailyDetailsGridItem">
+                  <label>Feels Like</label>
+                  <label>{Math.round(item.feels_like.day)}°F</label>
+                </div>
+                <div className="dailyDetailsGridItem">
+                  <label>Wind</label>
+                  <label>{Math.round(item.wind_speed)} mph</label>
+                </div>
+                <div className="dailyDetailsGridItem">
+                  <label>Humidity</label>
+                  <label>{item.humidity}%</label>
+                </div>
+                <div className="dailyDetailsGridItem">
+                  <label>Pressure</label>
+                  <label>{item.pressure} hPa</label>
+                </div>
+              </div>
+            </AccordionItemPanel>
           </AccordionItem>
         ))}
       </Accordion>
