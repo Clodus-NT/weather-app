@@ -1,11 +1,11 @@
 .weatherContainer {
-  width: 300px;
-  margin: 20px auto 0 auto;
+  width: 50%;
+  margin: 20px auto 20px auto;
   padding: 10px;
   border-radius: 6px;
   box-shadow: 10px -2px 20px 2px rgb( 0 0 0 / 30%);
   color: white;
-  background-color: #333;
+  background-color: rgb(97, 51, 196);
 }
 
 .top,
@@ -52,6 +52,10 @@
   justify-content: space-between;
 }
 
+.detailsTitle {
+  font-weight: 600;
+}
+
 .parameterLabel {
   text-align: left;
   font-weight: 400;
@@ -62,4 +66,12 @@
   text-align: right;
   font-weight: 600;
   font-size: 13px;
+}
+
+@media (max-width: 500px) {
+
+  .weatherContainer {
+    width: 300px;
+  }
+
 }

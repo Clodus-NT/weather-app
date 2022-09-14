@@ -35,6 +35,7 @@ const Search = ({onSearchChange}) => {
 
   return (
     <AsyncPaginate
+    className="searchBar"
       placeholder='Search for City'
       // Debounce helps cut down on api calls
       debounceTimeout={800}
